@@ -1,5 +1,11 @@
 <template>
-  <div>
-    <h1 class="text-red-400">Test</h1>
+  <div :class="{ 'dark': darkMode }">
+    <div class="bg-white dark:bg-dim-900">
+
+    </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const darkMode = ref(true)
+</script>
